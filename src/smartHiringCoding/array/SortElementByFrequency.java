@@ -1,4 +1,5 @@
 package smartHiringCoding.array;
+import java.util.*;
 
 public class SortElementByFrequency {
     static void sortElementByFrequency(int[] arr){
