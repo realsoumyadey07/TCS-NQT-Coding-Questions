@@ -3,26 +3,30 @@ import java.util.*;
 
 public class SortElementByFrequency {
     static void sortElementByFrequency(int[] arr){
-        Arrays.sort(arr);
         HashMap<Integer, Integer> list = new HashMap<>();
-        for(int i: arr){
-            if(list.containsKey(i)){
-                list.put(i, list.get(i)+1);
+        for(int i=0;i<arr.length;i++){
+            if(list.containsKey(arr[i])){
+                list.put(arr[i], list.get(arr[i])+1);
             }else {
-                list.put(i, 1);
+                list.put(arr[i], 1);
             }
         }
-        ArrayList<Integer> temp = new ArrayList<>();
-        for(int i: list.values()){
-            temp.add(i);
-        }
-        Collections.sort(temp, Collections.reverseOrder());
-        for(int i: temp){
-            for(int j=0;j<i;j++){
-                System.out.print(i);
+        LinkedHashMap<Integer, Integer> sortedList = sortHashMap(list);
+        for(Map.Entry<Integer, Integer> entry: sortedList.entrySet()){
+            for(int i=0; i<entry.getValue(); i++){
+                System.out.print(entry.getKey()+ ", ");
             }
-            System.out.print(", ");
         }
+
+    }
+    static LinkedHashMap<Integer, Integer> sortHashMap(HashMap<Integer, Integer> list){
+        List<Map.Entry<Integer, Integer>> arrayList = new ArrayList<>(list.entrySet());
+        arrayList.sort(Comparator.comparing(Map.Entry<Integer, Integer>::getValue).reversed());
+        LinkedHashMap<Integer, Integer> newList = new LinkedHashMap<>();
+        for(Map.Entry<Integer, Integer> entry: arrayList){
+            newList.put(entry.getKey(), entry.getValue());
+        }
+        return newList;
     }
     public static void main(String[] args){
         int[] arr = {1,2,3,2,4,3,1,2};
