@@ -12,10 +12,8 @@ public class AmstrongNumber {
             ArrayList<Integer> list = new ArrayList<>();
             while (temp > 10){
                 int l = temp%10;
-                if(l > 0){
-                    power++;
-                    list.add(l);
-                }
+                power++;
+                list.add(l);
                 temp = temp/10;
             }
             list.add(temp);
@@ -30,7 +28,7 @@ public class AmstrongNumber {
         }
     }
     public static void main(String[] args){
-        int num = 15340;
+        int num = 153;
         isAmstrong(num);
     }
 }
