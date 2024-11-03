@@ -2,14 +2,14 @@ package recurssion;
 
 public class FibonacciNumber {
     public static int calculateFibonacci(int n){
-        if(n==1 || n==2){
-            return 1;
+        // base condition
+        if(n < 2){
+            return n;
         }
-        System.out.println(n);
         return calculateFibonacci(n-1) + calculateFibonacci(n-2);
     }
     public static void main(String[] args) {
-        int n = 5;
-        calculateFibonacci(n);
+        int n = 4;
+        System.out.println(calculateFibonacci(n));
     }
 }
