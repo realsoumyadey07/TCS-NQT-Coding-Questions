@@ -1,23 +1,27 @@
 package collectionFrameworks.listInterface;
 import java.util.Vector;
 
+class Student {
+    String name;
+    int rollno;
+    Student(String name, int rollno){
+        this.name = name;
+        this.rollno = rollno;
+    }
+}
+
 public class VectorsInJava {
-    public static void printVerctors(Vector<String> vector){
-        for(String i: vector){
-            System.out.print(i+", ");
+    public static void printVerctors(Vector<Student> vector){
+        for(Student i: vector){
+            System.out.println("My name is: "+ i.name+ "and my roll no. is: "+ i.rollno);
         }
     }
     public static void main(String[] args){
-        Vector<String> vector = new Vector<>();
-        vector.add("Soumya Dey");
-        vector.add("Mala Dey");
-        vector.add("Sajal Dey");
-        System.out.println(vector.size());
-        System.out.println(vector.get(1));
-        System.out.println(vector.getFirst());
-        System.out.println(vector.remove(1));
-        System.out.println(vector.removeFirst());
-        System.out.println(vector.isEmpty());
+        Vector<Student> vector = new Vector<>();
+        Student s1 = new Student("Soumya Dey", 119);
+        Student s2 = new Student("Ayush Singh", 207);
+        vector.add(s1);
+        vector.add(s2);
         printVerctors(vector);
     }
 }
