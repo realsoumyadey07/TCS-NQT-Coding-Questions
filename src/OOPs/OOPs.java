@@ -24,6 +24,9 @@ class Student {
         this.name = s1.name;
         this.age = s1.age;
     }
+    Student(){
+        System.out.println("Student constructor created!");
+    }
 }
 
 public class OOPs {
@@ -43,5 +46,9 @@ public class OOPs {
         student1.name = "Soumyadip Dey";
         student1.printAge();
         student1.printName();
+        Student student2 = new Student(student1);
+        student2.age = 21;
+        student2.printAge();
+        student2.printName();
     }
 }
