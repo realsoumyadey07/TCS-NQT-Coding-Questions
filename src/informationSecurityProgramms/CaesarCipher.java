@@ -11,7 +11,7 @@ public class CaesarCipher {
             } else if (Character.isLowerCase(c)) {
                 char ch = (char) (((c-'a'+3)%26)+'a');
                 newStr.append(ch);
-            } else if (c == ' ') { // ' ' space == '%' 
+            } else if (c == ' ') { // ' ' space == '%'
                 newStr.append('%');
             }
         }
