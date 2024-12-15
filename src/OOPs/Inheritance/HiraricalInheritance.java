@@ -22,5 +22,7 @@ public class HiraricalInheritance {
     public static void main(String[] args){
         Car car1 = new Car();
         car1.function();
+        Bike bike = new Bike();
+        bike.function();
     }
 }
