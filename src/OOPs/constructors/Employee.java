@@ -19,10 +19,11 @@ public class Employee {
     public static void main(String[] args){
         Employee em1 = new Employee();
 //        System.out.println(em1.salary);
-        Employee em2 = new Employee();
+        Employee em2 = new Employee("Soumya Dey", 119);
         System.out.println(em1.name);
         System.out.println(em1.isThere);
         System.out.println(em1.n);
         System.out.println(em1.d);
+        System.out.println(em2.name);
     }
 }
