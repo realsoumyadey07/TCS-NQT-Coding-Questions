@@ -1,0 +1,24 @@
+Data Types (Java):
+    1. Primitive Data Types:
+        1. Byte,
+        2. Short,
+        3. Int,
+        4. Long,
+        5. Float,
+        6. Double,
+        7. Boolean,
+        8. char
+    2. Non Primitive Data Types:
+        1. Linear:
+            1. String,
+            2. Array,
+            3. List,
+            4. Set,
+            5. Queue,
+            6. LinkedList,
+            7. ArrayList,
+            8. HashSet,
+            9. LinkedHashSet etc.
+        2. Non linear:
+            1. Graph,
+            2. Tree

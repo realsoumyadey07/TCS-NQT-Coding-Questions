@@ -1,0 +1,56 @@
+Differences between Array and Collections:
+Array:
+    1. Array can store the primitive and the non primitives.
+    2. Array can store only homogeneous type of data.
+    3. We can't change the size of it.
+    4. It doesn't provide inbuilt methods, you have to develop it by yourself.
+Collections:
+    1. Collection frameworks can only store the non primitive data types.
+    2. Collection frameworks can store heterogeneous types of data also.
+    3. But here we can change the size of the data type at run time.
+    4. But collection frameworks are API that provides classes, interfaces and methods.
+
+Collection:
+    It is a single entity or object which can store multiple data.
+Framework:
+    It represents the library.
+    It is the set of predefined classes and interfaces which is used to store multiple data.
+It contains 2 main parts:
+    1. java.util.Collection,
+    2. java.util.Map
+
+Collection Framework:
+    It is an API which contains predefined classes and interfaces.
+Collection (interface):
+    It is the root interface (present in java.util package) of all collection objects.
+Collections (utility class):
+    It is the utility class which contains only the static methods
+
+Collection (interface):
+    1. List (interface):
+        1. ArrayList (class),
+        2. LinkedList (class),
+        3. Vector (Legacy class),
+        4. Stack (Legacy class)
+    2. Set (interface):
+        1. HashSet (class),
+        2. LinkedHashSet (class),
+        3. SortedSet (interface),
+        4. NavigableSet (interface),
+        5. TreeSet (class)
+    3. Queue (interface):
+        1. PriorityQueue (class),
+        2. Dequeue (interface),
+        3. ArrayDequeue (class)
+
+Map (interface):
+    1. HashMap (class),
+    2. LinkedHashMap (class),
+    3. IdentityHashMap (class),
+    4. WeakHashMap (class),
+    5. SortedMap (interface),
+    6. NavigableMap (interface),
+    7. TreeMap (class),
+    8. HashTable (class),
+    9. Properties (class),
+    10. Dictionaries (class)
