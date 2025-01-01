@@ -1,16 +1,17 @@
 package strings;
 
+import java.util.Scanner;
+
 public class Strings {
     public static void main(String[] args){
-        String name = "Soumya ";
-        String name2 = "Ishani";
-        int a = 20;
-        String b = "24";
-        int c = Integer.parseInt(a+b);
-        System.out.println(name.length());
-        System.out.println(name.toUpperCase());
-        System.out.println(name.toLowerCase());
-        System.out.println(name.concat(name2));
-        System.out.println(c);
+        //creating a string object
+        String name = new String("Soumya Dey");
+        // string instantiate
+        String str = "Dev anand";
+        //user input
+        Scanner sc = new Scanner(System.in);
+        String age = sc.next();
+
+        System.out.println(age);
     }
 }
