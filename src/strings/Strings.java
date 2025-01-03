@@ -38,6 +38,17 @@ public class Strings {
         String sentence2 = "My name is soumya";
         String name4 = sentence2.substring(11, sentence2.length());
         System.out.println(name4);
-        //
+        //concat()
+        String phoneName = "Realme";
+        String newStr = phoneName.concat(" C55"); // since strings are immutable in java
+        System.out.println(newStr);
+        //contains()
+        String laptop = "HP i5 7th gen";
+        System.out.println(laptop.contains("HP"));
+        //endsWith()
+        String soumya = "Soumya Dey";
+        System.out.println(soumya.endsWith("Dey"));
+        //equal()
+        System.out.println(name2.equals(name3));
     }
 }
