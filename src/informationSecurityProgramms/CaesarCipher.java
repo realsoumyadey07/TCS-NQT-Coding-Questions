@@ -34,7 +34,7 @@ public class CaesarCipher {
         return newStr.toString();
     }
     public static void main(String[] args){
-        String str = "Soumyadip Dey";
+        String str = "LQIRUPDWLRQ VHFULWB";
         String encrypted = encrypt(str);
         String decrypted = decrypt(encrypted);
         System.out.println(encrypted);

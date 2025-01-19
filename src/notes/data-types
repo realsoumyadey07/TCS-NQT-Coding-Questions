@@ -22,3 +22,7 @@ Data Types (Java):
         2. Non linear:
             1. Graph,
             2. Tree
+Types of Variable:
+    1. Instance Variables,
+    2. Static Variables,
+    3. Local Variables
