@@ -4,7 +4,6 @@ package gfg160DaysCoding.arrays;
 //find the maximum sum of a subarray
 public class KadanesAlgo {
     static void calculateMaximumSubarray(int[] arr){
-        int l = 0, r = arr.length-1;
         int maxSum = Integer.MIN_VALUE;
         int sum = 0;
         for(int i =0;i<arr.length;i++){
