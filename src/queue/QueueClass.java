@@ -9,10 +9,14 @@ public class QueueClass {
         }
     }
     public static class Queue {
-        public static Node head;
-        public static Node last;
+        public static Node front;
+        public static Node rear;
+        public static int size;
         public static boolean isEmpty(){
-            return head == null;
+            return front == null;
+        }
+        public static void enqueue(int data) {
+
         }
     }
     public static void main(String[] args){
