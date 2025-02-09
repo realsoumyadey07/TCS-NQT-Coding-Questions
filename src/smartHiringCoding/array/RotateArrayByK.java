@@ -11,7 +11,7 @@ public class RotateArrayByK {
                 if(i<k){
                     temp[i] = arr[i];
                 } else {
-                  arr[i-k] = arr[i];
+                    arr[i-k] = arr[i];
                 }
             }
             int j = 0;
