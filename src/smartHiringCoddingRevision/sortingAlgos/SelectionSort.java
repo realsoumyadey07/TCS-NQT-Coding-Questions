@@ -19,7 +19,7 @@ public class SelectionSort {
         int[] arr = {2, 4, 8, 1, 5, 9};
         int[] sortedArr = selectionSort(arr);
         for(int i: sortedArr){
-            System.out.print(i+", ");
+            System.out.print(i + ", ");
         }
     }
 }
