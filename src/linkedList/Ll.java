@@ -5,7 +5,7 @@ public class Ll {
         String data;
         Node next;
 
-        Node(String data) {
+        public Node(String data) {
             this.data = data;
             this.next = null;
         }
@@ -15,7 +15,8 @@ public class Ll {
         Node head;
         private int size;
 
-        LinkedList() {
+        public LinkedList() {
+            this.head = null;
             this.size = 0;
         }
 

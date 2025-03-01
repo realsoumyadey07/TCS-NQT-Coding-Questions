@@ -14,7 +14,6 @@ public class PracticeOOPs {
     public static void main(String[] args){
         OtherObject A = new OtherObject(1, 2);
         OtherObject B = new OtherObject(3, 4);
-
         OtherObject C = A.add(B);
         System.out.println(C.x);
         System.out.println(C.y);

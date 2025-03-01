@@ -14,7 +14,8 @@ public class DLL {
     static class DoublyLinkedList {
         Node head;
         private int size;
-        DoublyLinkedList(){
+        public DoublyLinkedList(){
+            this.head = null;
             this.size = 0;
         }
         public boolean isEmpty(){
