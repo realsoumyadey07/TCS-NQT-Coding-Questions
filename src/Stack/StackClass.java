@@ -10,8 +10,8 @@ public class StackClass {
         }
     }
     static  class Stack {
-        public static Node head;
-        public static boolean isEmpty(){
+        public Node head;
+        public boolean isEmpty(){
             return head == null;
         }
         public void push(int data){
