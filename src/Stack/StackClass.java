@@ -2,46 +2,67 @@ package Stack;
 
 public class StackClass {
     static class Node {
-        int data;
-        Node next;
+        public int data;
+        public Node next;
         public Node(int data){
             this.data = data;
             this.next = null;
         }
     }
-    static  class Stack {
+    static class Stack {
         public Node head;
+        private int size;
+        public int getSize(){
+            return this.size;
+        }
         public boolean isEmpty(){
-            return head == null;
+            return this.head == null;
         }
         public void push(int data){
             Node newNode = new Node(data);
-            if(isEmpty()) {
+            if(this.isEmpty()){
                 head = newNode;
+                ++this.size;
                 return;
             }
             newNode.next = head;
             head = newNode;
+            ++this.size;
         }
-        public void pop(){
-            if(isEmpty()){
+        public int pop(){
+            if(this.isEmpty()){
                 System.out.println("The stack is empty!");
-                return;
+                return 0;
             }
+            int data = head.data;
             head = head.next;
+            return data;
         }
-        public void peek(){
-            if(isEmpty()){
-                System.out.println("The stack is empty!");
+        public void printStack(){
+            if(this.isEmpty()){
+                System.out.println("Stack is empty!");
                 return;
             }
-            System.out.println(head.data);
+            Node temp = head;
+            while (temp!=null){
+                System.out.println(temp.data);
+                temp = temp.next;
+            }
+        }
+        public int peek(){
+            if(this.isEmpty()){
+                System.out.println("Stack is empty!");
+                return 0;
+            }
+            return head.data;
         }
     }
-    public static void main(String[] args){
-        Stack stk = new Stack();
-        stk.push(12);
-        stk.pop();
-        stk.peek();
+    public static void main(String[] args) {
+        Stack stk1 = new Stack();
+        stk1.push(12);
+        stk1.push(11);
+        stk1.push(10);
+        stk1.printStack();
+        System.out.println(stk1.peek());
     }
 }

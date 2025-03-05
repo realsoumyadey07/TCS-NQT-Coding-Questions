@@ -3,7 +3,7 @@ package OOPs.polymorphism;
 class Student {
     String name;
     int age;
-    public void printInfo(String name){
+    public void printInfo(String name){  //function overloading
         System.out.println("Name is: "+ name);
     }
     public void printInfo(int age){

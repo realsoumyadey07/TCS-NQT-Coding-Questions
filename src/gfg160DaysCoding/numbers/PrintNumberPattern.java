@@ -1,7 +1,6 @@
 package gfg160DaysCoding.numbers;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class PrintNumberPattern {
     public static ArrayList<Integer> printNumberPattern(int n){

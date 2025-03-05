@@ -18,7 +18,6 @@ public class AnonymousInnerClass {
             }
         };
         obj.show();
-
         //implementing anonymous abstructed object together
         E obj1 = new E(){
             public void show(){
