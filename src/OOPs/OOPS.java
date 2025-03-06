@@ -1,4 +1,5 @@
 package OOPs;
+import OOPs.packedges.*;
 
 class Pen {
     String color;
@@ -22,5 +23,9 @@ public class OOPS {
         pen2.type = "gel";
         pen1.printColor();
         pen2.printColor();
+        // example of packages in java
+        Account acc1 = new Account("Soumya Dey");
+        acc1.getName();
+        System.out.println(acc1.name);
     }
 }
