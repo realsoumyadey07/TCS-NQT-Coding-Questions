@@ -1,6 +1,6 @@
 package queue;
 
-public class CircularQueue {
+public class CircularQueueUsingArr {
     static class Queue {
         public int[] arr;
         final int size;
