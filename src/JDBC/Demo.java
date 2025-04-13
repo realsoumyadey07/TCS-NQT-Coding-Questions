@@ -15,10 +15,12 @@ public class Demo {
             rs.next();
             String name = rs.getString(1);
             System.out.println(name);
+            con.close();
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } finally {
             System.out.println("Data fetched done!");
         }
+
     }
 }
